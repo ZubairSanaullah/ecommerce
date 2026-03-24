@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Truck, Shield, RotateCcw, Sparkles } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
+import { MdOutlineMail } from "react-icons/md";
 import './Home.css';
 
 export default function Home() {

@@ -72,8 +72,15 @@
 }
 
 @keyframes glowPulse {
-  0%, 100% { transform: scale(1); opacity: 0.6; }
-  50% { transform: scale(1.15); opacity: 1; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
 }
 
 /* ========== Buttons ========== */
@@ -88,7 +95,9 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .btn:active {
@@ -206,20 +215,20 @@
 
 /* ========== CTA ========== */
 .cta-banner {
-  margin: 20px 24px 48px;
+  /* margin: 20px 24px 48px; */
   padding: 48px 32px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8, #1e40af);
+  /* border-radius: 20px; */
+  background-color: #eaf1fa;
   text-align: center;
 }
 
 .cta-content h2 {
-  color: #fff;
+  color: #303030;
   margin: 0 0 8px;
 }
 
 .cta-content p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(138, 138, 138, 0.8);
   margin-bottom: 24px;
 }
 
@@ -237,22 +246,22 @@
   border: none;
   border-radius: 12px;
   font-size: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: #020202;
   outline: none;
 }
 
 .cta-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(0, 0, 0);
 }
 
 .cta-input:focus {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgb(255, 255, 255);
 }
 
 .cta-banner .btn-primary {
-  background: #fff;
-  color: #2563eb;
+  background: #2563eb;
+  color: #fff;
 }
 
 .cta-banner .btn-primary:hover {

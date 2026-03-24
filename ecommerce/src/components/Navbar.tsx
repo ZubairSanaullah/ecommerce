@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="navbar" id="main-navbar">
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo" id="navbar-logo">
-          <span className="logo-accent">ZUBAYR</span> STORE
+          <span className="logo-accent">ZUBAYR</span>STORE
         </Link>
 
         <div className="search-bar">
