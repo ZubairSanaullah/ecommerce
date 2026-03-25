@@ -260,6 +260,68 @@
   }
 }
 
+/* Extra Services */
+
+.extra-services {
+  padding: 48px 24px;
+}
+
+.extra-services-grid {
+  display: flex;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 16px;
+}
+
+.extra-service {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  /* gap: 12px; */
+}
+
+.extra-service:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  transition: all 0.3s ease-in-out;
+}
+
+.extra-service-icon {
+  display: flex;
+  position: relative;
+  top: -20px;
+  left: 80%;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bfd1e9;
+  color: #020202;
+  border: 2px solid white;
+}
+
+.extra-services-img {
+  width: 40px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.extra-services-icon {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.extra-service-info h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--text-h);
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
