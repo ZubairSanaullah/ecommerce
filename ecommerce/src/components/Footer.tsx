@@ -24,26 +24,45 @@ export default function Footer() {
         </div>
 
         <div className="footer-columns">
-          <div className="footer-col">
+          {/* <div className="footer-col">
             <h4>Shop</h4>
             <Link to="/products">All Products</Link>
             <Link to="/products?category=Electronics">Electronics</Link>
             <Link to="/products?category=Clothing">Clothing</Link>
             <Link to="/products?category=Accessories">Accessories</Link>
-          </div>
+          </div> */}
           <div className="footer-col">
-            <h4>Company</h4>
+            <h4>About</h4>
             <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#">Find a Store</a>
+            <a href="#">Categories</a>
+            <a href="#">Blogs</a>
           </div>
           <div className="footer-col">
-            <h4>Support</h4>
+            <h4>Partnership</h4>
+            <a href="#">About Us</a>
+            <a href="#">Sell on Zubayr</a>
+            <a href="#">Categories</a>
+            <a href="#">Blogs</a>
+          </div>
+          <div className="footer-col">
+            <h4>Information</h4>
             <a href="#">Help Center</a>
-            <a href="#">Returns</a>
+            <a href="#">Money Refund</a>
             <a href="#">Shipping</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div className="footer-col">
+            <h4>For Users</h4>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Settings</a>
+            <a href="#">My Orders</a>
+          </div>
+          <div className='get-app'>
+            <h4>Get the App</h4>
+            <img src="/src/assets/Layout/Misc/market-button.png" alt="App Store" />
+            <img src="/src/assets/Layout/Misc/Group.png" alt="Google Play" />
           </div>
         </div>
       </div>

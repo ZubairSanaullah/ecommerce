@@ -195,6 +195,71 @@
   gap: 10px;
 }
 
+/* ========== Suppliers ========== */
+.suppliers-section {
+  padding: 48px 24px;
+}
+
+.suppliers-header h2 {
+  margin: 0 0 32px 0;
+}
+
+.suppliers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 16px;
+}
+
+.country-flag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.country-flag img {
+  width: 40px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.country-flag-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-flag-info h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--text-h);
+}
+
+.country-flag-info p {
+  /* margin: 4px 0 0 0; */
+  /* margin: 0; */
+  padding: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+@media (max-width: 1024px) {
+  .suppliers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .suppliers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .suppliers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
