@@ -81,12 +81,61 @@ export default function Home() {
         </div>
         <div className='home-and-outdoor-grid'>
           <div className='home-and-outdoor-item'>
-            <img src="/src/assets/Image/home/1.png" alt="1" className="home-and-outdoor-img" />
             <div className='home-and-outdoor-info'>
-              <h4>Home and outdoor</h4>
-              <p>-25%</p>
+              <h4>Soft Chairs</h4>
+              <p>From <span>USD 19</span></p>
             </div>
+            <img src="/src/assets/Image/interior/1.png" alt="1" className="home-and-outdoor-img" />
           </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Lamps</h4>
+              <p>From <span>USD 9</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/3.png" alt="2" className="home-and-outdoor-img" />
+          </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Mattress</h4>
+              <p>From <span>USD 15</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/9.png" alt="3" className="home-and-outdoor-img" />
+          </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Utensils</h4>
+              <p>From <span>USD 5</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/2.png" alt="4" className="home-and-outdoor-img" />
+          </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Kitchen Mixers</h4>
+              <p>From <span>USD 12</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/6.png" alt="5" className="home-and-outdoor-img" />
+          </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Blenders</h4>
+              <p>From <span>USD 10</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/5.png" alt="6" className="home-and-outdoor-img" />
+          </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Home Appliances</h4>
+              <p>From <span>USD 8</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/4.png" alt="7" className="home-and-outdoor-img" />
+          </div>
+          <div className='home-and-outdoor-item'>
+            <div className='home-and-outdoor-info'>
+              <h4>Coffee Makers</h4>
+              <p>From <span>USD 12</span></p>
+            </div>
+            <img src="/src/assets/Image/interior/8.png" alt="8" className="home-and-outdoor-img" />
+          </div>         
         </div>
       </section>
 
