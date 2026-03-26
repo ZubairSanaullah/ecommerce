@@ -2,87 +2,6 @@
   text-align: left;
 }
 
-/* ========== Hero ========== */
-.hero {
-  position: relative;
-  padding: 80px 24px 60px;
-  overflow: hidden;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 640px;
-}
-
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-bg);
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.hero-title {
-  font-size: 56px;
-  font-weight: 800;
-  letter-spacing: -2px;
-  line-height: 1.1;
-  margin: 0 0 20px;
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #1d4ed8, #3b82f6, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero-subtitle {
-  font-size: 18px;
-  color: var(--text);
-  line-height: 1.7;
-  margin-bottom: 32px;
-  max-width: 500px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.hero-glow {
-  position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.15), transparent 70%);
-  border-radius: 50%;
-  z-index: 0;
-  animation: glowPulse 6s ease-in-out infinite;
-}
-
-@keyframes glowPulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: scale(1.15);
-    opacity: 1;
-  }
-}
-
 /* ========== Buttons ========== */
 .btn {
   display: inline-flex;
@@ -125,43 +44,106 @@
   color: var(--accent);
 }
 
-/* ========== Trust ========== */
-.trust-section {
+/* ========== Deals and Offers ========== */
+.deals-and-offer-section {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 32px 24px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  flex-wrap: wrap;
+  padding: 48px 24px;
+  /* border: 1px solid var(--border); */
 }
 
-.trust-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.deals-and-offer-header {
+  width: 30%;
+  border: 1px solid var(--border);
+  padding: 16px;
 }
 
-.trust-icon {
-  width: 48px;
-  height: 48px;
+.deals-and-offer-header h2 {
+  margin: 0;
+}
+
+.countdown {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.countdown-item {
+  width: 100%;
+  background: #303030;
+  padding: 10px;
   border-radius: 12px;
-  background: var(--accent-bg);
-  color: var(--accent);
+  color: white;
+  text-align: center;
 }
 
-.trust-item strong {
-  font-size: 14px;
+.countdown-item p {
+  margin: 0;
+}
+
+.deals-and-offer-grid {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.deals-and-offer-item {
+  border: 1px solid var(--border);
+  /* border-top: none;
+  border-bottom: none; */
+  padding: 16px;
+}
+
+.deals-and-offer-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  transition: all 0.3s ease-in-out;
+}
+
+.deals-and-offer-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.deals-and-offer-icon {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.deals-and-offer-info h4 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
   color: var(--text-h);
-  display: block;
 }
 
-.trust-item p {
-  font-size: 13px;
-  color: var(--text);
+.deals-and-offer-info p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: red;
+  background: #ffe6e6;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px;
+  border-radius: 50px;
+}
+
+@media (max-width: 1024px) {
+  .deals-and-offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .deals-and-offer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ========== Recommended items ========== */

@@ -64,18 +64,6 @@
   text-transform: uppercase;
 }
 
-.product-card-discount {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #ef4444;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 4px 8px;
-  border-radius: 6px;
-}
-
 .product-card-body {
   padding: 16px;
   display: flex;
@@ -107,22 +95,6 @@
 
 .product-card-name:hover {
   color: var(--accent);
-}
-
-.product-card-rating {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
-}
-
-.rating-value {
-  font-weight: 600;
-  color: var(--text-h);
-}
-
-.rating-count {
-  color: var(--text);
 }
 
 .product-card-footer {

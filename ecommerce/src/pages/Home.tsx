@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { ArrowRight, Truck, Shield, RotateCcw, Sparkles, Search, Package } from 'lucide-react';
+import { Truck, Shield, Search, Package } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
 import './Home.css';
@@ -9,54 +8,84 @@ export default function Home() {
 
   return (
     <div className="home" id="home-page">
-      {/* Hero Section */}
-      <section className="hero" id="hero-section">
-        <div className="hero-content">
-          <span className="hero-tag">
-            <Sparkles size={14} /> New Collection 2026
-          </span>
-          <h1 className="hero-title">
-            Discover <span className="gradient-text">Premium</span> Products
-          </h1>
-          <p className="hero-subtitle">
-            Curated essentials designed for modern living. Explore our handpicked
-            collection of premium products at unbeatable prices.
-          </p>
-          <div className="hero-actions">
-            <Link to="/products" className="btn btn-primary" id="shop-now-btn">
-              Shop Now <ArrowRight size={18} />
-            </Link>
-            <Link to="/products" className="btn btn-outline" id="browse-btn">
-              Browse Categories
-            </Link>
+
+      {/* Deals and Offers */}
+      <section className='deals-and-offer-section'>
+        <div className='deals-and-offer-header'>
+          <h2>Deals and Offers</h2>
+          <p>Hygeine equipments</p>
+          <div className='countdown'>
+            <div className='countdown-item'>
+              <p>04</p>
+              <p>Days</p>
+            </div>
+            <div className='countdown-item'>
+              <p>13</p>
+              <p>Hour</p>
+            </div>
+            <div className='countdown-item'>
+              <p>45</p>
+              <p>Mint</p>
+            </div>
+            <div className='countdown-item'>
+              <p>32</p>
+              <p>Sec</p>
+            </div>
           </div>
         </div>
-        <div className="hero-visual">
-          <div className="hero-glow"></div>
+        <div className='deals-and-offer-grid'>
+          <div className='deals-and-offer-item'>
+            <img src="/src/assets/Image/tech/2.png" alt="1" className="deals-and-offer-img" />
+            <div className='deals-and-offer-info'>
+              <h4>Smart Watches</h4>
+              <p>-25%</p>
+            </div>
+          </div>
+          <div className='deals-and-offer-item'>
+            <img src="/src/assets/Image/tech/7.png" alt="2" className="deals-and-offer-img" />
+            <div className='deals-and-offer-info'>
+              <h4>Laptops</h4>
+              <p>-15%</p>
+            </div>
+          </div>
+          <div className='deals-and-offer-item'>
+            <img src="/src/assets/Image/tech/1.png" alt="3" className="deals-and-offer-img" />
+            <div className='deals-and-offer-info'>
+              <h4>Cameras</h4>
+              <p>-40%</p>
+            </div>
+          </div>
+          <div className='deals-and-offer-item'>
+            <img src="/src/assets/Image/tech/4.png" alt="4" className="deals-and-offer-img" />
+            <div className='deals-and-offer-info'>
+              <h4>Headphones</h4>
+              <p>-25%</p>
+            </div>
+          </div>
+          <div className='deals-and-offer-item'>
+            <img src="/src/assets/Image/tech/3.png" alt="5" className="deals-and-offer-img" />
+            <div className='deals-and-offer-info'>
+              <h4>Mobile Phones</h4>
+              <p>-10%</p>
+            </div>
+          </div>
         </div>
       </section>
-
-      {/* Trust Badges */}
-      <section className="trust-section" id="trust-section">
-        <div className="trust-item">
-          <div className="trust-icon"><Truck size={24} /></div>
-          <div>
-            <strong>Free Shipping</strong>
-            <p>On orders over $50</p>
-          </div>
+      
+      {/* Home and outdoor */}
+      <section className='home-and-outdoor-section'>
+        <div className='home-and-outdoor-header'>
+          <img src="/src/assets/Image/backgrounds/5.png" alt="1" className="home-and-outdoor-bg" />
+          <h2>Home and outdoor</h2>
+          <p>Source now</p>
         </div>
-        <div className="trust-item">
-          <div className="trust-icon"><Shield size={24} /></div>
-          <div>
-            <strong>Secure Payment</strong>
-            <p>256-bit SSL encryption</p>
-          </div>
-        </div>
-        <div className="trust-item">
-          <div className="trust-icon"><RotateCcw size={24} /></div>
-          <div>
-            <strong>Easy Returns</strong>
-            <p>30-day return policy</p>
+        <div className='home-and-outdoor-grid'>
+          <div className='home-and-outdoor-item'>
+            <img src="/src/assets/Image/home/1.png" alt="1" className="home-and-outdoor-img" />
+            <div className='home-and-outdoor-info'>
+              <h4>Home and outdoor</h4>
+              <p>-25%</p>
+            </div>
           </div>
         </div>
       </section>
