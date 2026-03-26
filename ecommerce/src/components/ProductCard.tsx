@@ -25,6 +25,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <Link to={`/product/${product.id}`} className="product-card-name">
           {product.name}
         </Link>
+        <p className="product-card-description">{product.description}</p>
 
         <div className="product-card-footer">
           <div className="product-card-prices">

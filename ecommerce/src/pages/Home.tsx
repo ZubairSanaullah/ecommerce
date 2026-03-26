@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Truck, Shield, RotateCcw, Sparkles, Search, Package } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
-import { MdOutlineMail } from "react-icons/md";
 import './Home.css';
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = products.slice(0, 10);
 
   return (
     <div className="home" id="home-page">
@@ -66,9 +65,9 @@ export default function Home() {
       <section className="recommendation-section" id="recommendation-section">
         <div className="section-header">
           <h2>Recommended items</h2>
-          <Link to="/products" className="section-link">
+          {/* <Link to="/products" className="section-link">
             View All <ArrowRight size={16} />
-          </Link>
+          </Link> */}
         </div>
         <div className="product-grid">
           {featuredProducts.map((product) => (

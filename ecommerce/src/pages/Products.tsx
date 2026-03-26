@@ -18,7 +18,7 @@ export default function Products() {
     switch (sortBy) {
       case 'price-asc': return a.price - b.price;
       case 'price-desc': return b.price - a.price;
-      case 'rating': return b.rating - a.rating;
+      // case 'rating': return b.rating - a.rating;
       default: return 0;
     }
   });
