@@ -62,10 +62,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="featured-section" id="featured-section">
+      {/* Recommended items */}
+      <section className="recommendation-section" id="recommendation-section">
         <div className="section-header">
-          <h2>Featured Products</h2>
+          <h2>Recommended items</h2>
           <Link to="/products" className="section-link">
             View All <ArrowRight size={16} />
           </Link>

@@ -164,8 +164,8 @@
   color: var(--text);
 }
 
-/* ========== Featured ========== */
-.featured-section {
+/* ========== Recommended items ========== */
+.recommendation-section {
   padding: 48px 24px;
 }
 
