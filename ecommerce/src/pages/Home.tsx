@@ -9,6 +9,26 @@ export default function Home() {
   return (
     <div className="home" id="home-page">
 
+      {/* Categories */}
+      <section className='categories-section'>
+        <div className='categories-header'>
+          <div className='categories-header-left'>
+            <p>Automobiles</p>
+            <p>Clothes and wear</p>
+            <p>Home interior</p>
+            <p>Computer and tech</p>
+            <p>Tools, equipments</p>
+            <p>Sports and outdoor</p>
+            <p>Animal and pets</p>
+            <p>Machinery tools</p>
+            <p>More categories</p>
+          </div>
+          <div className='categories-header-mid'>
+            <img src="/src/assets/Image/backgrounds/6.png" alt="1" className="categories-header-img" />
+          </div>
+        </div>
+      </section>
+
       {/* Deals and Offers */}
       <section className='deals-and-offer-section'>
         <div className='deals-and-offer-header'>
@@ -217,7 +237,7 @@ export default function Home() {
           <form>
             <h3>Send quote to suppliers</h3>
             <input type="text" placeholder="What item do you need?" />
-            <input type="text" placeholder="Type more details" />
+            <textarea name="details" id="details" placeholder="Type more details"></textarea>
             <div className='inquiry-form-row'>
               <input type="text" placeholder="Quantity" />
               <input type="number" min="1" max="100" value="1" />
