@@ -1,3 +1,9 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 .home {
   text-align: left;
 }
@@ -142,6 +148,117 @@
 
 @media (max-width: 640px) {
   .deals-and-offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Home and outdoor */
+
+.home-and-outdoor-section {
+  display: flex;
+  padding: 48px 24px;
+  position: relative;
+  /* border: 1px solid var(--border); */
+}
+
+.home-and-outdoor-header {
+  display: flex;
+  width: 30%;
+  border: 1px solid var(--border);
+}
+
+.home-and-outdoor-header h2 {
+  position: absolute;
+  color: #020202;
+  font-size: 30px;
+  font-weight: 500;
+  top: 15%;
+  left: 3%;
+}
+
+.home-and-outdoor-header p {
+  position: absolute;
+  font-size: 18px;
+  top: 30%;
+  left: 3%;
+  background: #ffffff;
+  color: #020202;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.home-and-outdoor-header p:hover {
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+
+.home-and-outdoor-grid {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+.home-and-outdoor-item {
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+.home-and-outdoor-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-and-outdoor-img {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  position: relative;
+  right: -100px;
+}
+
+.home-and-outdoor-bg {
+  display: flex;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.home-and-outdoor-info h4 {
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-h);
+}
+
+.home-and-outdoor-info p {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #bfd1e9;
+  margin: 0;
+  padding: 6px;
+  border-radius: 50px;
+}
+
+.home-and-outdoor-info p span {
+  display: flex;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .home-and-outdoor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-and-outdoor-grid {
     grid-template-columns: 1fr;
   }
 }

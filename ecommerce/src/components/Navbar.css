@@ -9,11 +9,7 @@
   transition: background 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    background: rgba(22, 23, 29, 0.88);
-  }
-}
+
 
 .navbar-inner {
   max-width: 1400px;
