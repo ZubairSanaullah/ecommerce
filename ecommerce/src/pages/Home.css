@@ -53,7 +53,7 @@
 /* ========== Deals and Offers ========== */
 .deals-and-offer-section {
   display: flex;
-  padding: 48px 24px;
+  padding: 24px;
   /* border: 1px solid var(--border); */
 }
 
@@ -152,22 +152,25 @@
   }
 }
 
-/* Home and outdoor */
+/* Home and outdoor --- Consumer Gadgets */
 
-.home-and-outdoor-section {
+.home-and-outdoor-section,
+.consumer-gadgets-section {
   display: flex;
-  padding: 48px 24px;
+  padding: 24px;
   position: relative;
   /* border: 1px solid var(--border); */
 }
 
-.home-and-outdoor-header {
+.home-and-outdoor-header,
+.consumer-gadgets-header {
   display: flex;
   width: 30%;
   border: 1px solid var(--border);
 }
 
-.home-and-outdoor-header h2 {
+.home-and-outdoor-header h2,
+.consumer-gadgets-header h2 {
   position: absolute;
   color: #020202;
   font-size: 30px;
@@ -176,7 +179,12 @@
   left: 3%;
 }
 
-.home-and-outdoor-header p {
+.consumer-gadgets-header h2 span {
+  display: flex;
+}
+
+.home-and-outdoor-header p,
+.consumer-gadgets-header p {
   position: absolute;
   font-size: 18px;
   top: 30%;
@@ -187,30 +195,39 @@
   border-radius: 5px;
 }
 
-.home-and-outdoor-header p:hover {
+.consumer-gadgets-header p {
+  top: 40%;
+}
+
+.home-and-outdoor-header p:hover,
+.consumer-gadgets-header p:hover {
   background-color: var(--accent);
   color: white;
   cursor: pointer;
 }
 
-.home-and-outdoor-grid {
+.home-and-outdoor-grid,
+.consumer-gadgets-grid {
   display: grid;
   width: 70%;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.home-and-outdoor-item {
+.home-and-outdoor-item,
+.consumer-gadgets-item {
   border: 1px solid var(--border);
   padding: 16px;
 }
 
-.home-and-outdoor-item:hover {
+.home-and-outdoor-item:hover,
+.consumer-gadgets-item:hover {
   border-color: var(--accent);
   transform: translateY(-1px);
   transition: all 0.3s ease-in-out;
 }
 
-.home-and-outdoor-img {
+.home-and-outdoor-img,
+.consumer-gadgets-img {
   width: 50%;
   aspect-ratio: 1/1;
   border-radius: 10px;
@@ -218,7 +235,8 @@
   right: -100px;
 }
 
-.home-and-outdoor-bg {
+.home-and-outdoor-bg,
+.consumer-gadgets-bg {
   display: flex;
   position: relative;
   width: 100%;
@@ -226,7 +244,8 @@
   object-fit: cover;
 }
 
-.home-and-outdoor-info h4 {
+.home-and-outdoor-info h4,
+.consumer-gadgets-info h4 {
   padding: 10px;
   margin: 0;
   text-align: left;
@@ -235,7 +254,8 @@
   color: var(--text-h);
 }
 
-.home-and-outdoor-info p {
+.home-and-outdoor-info p,
+.consumer-gadgets-info p {
   text-align: left;
   font-size: 12px;
   font-weight: 500;
@@ -245,20 +265,23 @@
   border-radius: 50px;
 }
 
-.home-and-outdoor-info p span {
+.home-and-outdoor-info p span,
+.consumer-gadgets-info p span {
   display: flex;
   font-size: 14px;
   color: var(--accent);
 }
 
 @media (max-width: 1024px) {
-  .home-and-outdoor-grid {
+  .home-and-outdoor-grid,
+  .consumer-gadgets-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .home-and-outdoor-grid {
+  .home-and-outdoor-grid,
+  .consumer-gadgets-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -139,13 +139,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Consumer Gadgets */}
+      <section className='consumer-gadgets-section'>
+        <div className='consumer-gadgets-header'>
+          <img src="/src/assets/Image/backgrounds/8.png" alt="1" className="consumer-gadgets-bg" />
+          <h2>Consumer electronics <span>and gadgets</span></h2>
+          <p>Source now</p>
+        </div>
+        <div className='consumer-gadgets-grid'>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Smart Watches</h4>
+              <p>From <span>USD 19</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/2.png" alt="1" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Cameras</h4>
+              <p>From <span>USD 9</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/1.png" alt="2" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Headphones</h4>
+              <p>From <span>USD 15</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/9.png" alt="3" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Tablets</h4>
+              <p>From <span>USD 5</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/5.png" alt="4" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Gaming Set</h4>
+              <p>From <span>USD 12</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/4.png" alt="5" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Laptops & PC</h4>
+              <p>From <span>USD 340</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/7.png" alt="6" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Smart Phones</h4>
+              <p>From <span>USD 8</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/3.png" alt="7" className="consumer-gadgets-img" />
+          </div>
+          <div className='consumer-gadgets-item'>
+            <div className='consumer-gadgets-info'>
+              <h4>Gaming Phones</h4>
+              <p>From <span>USD 180</span></p>
+            </div>
+            <img src="/src/assets/Image/tech/6.png" alt="8" className="consumer-gadgets-img" />
+          </div>         
+        </div>
+      </section>
+
+      {/* Inquiry Section */}
+      <section className='inquiry-section'>
+        <div className='inquiry-header'>
+          <img src="/src/assets/Image/backgrounds/7.png" alt="1" className="inquiry-bg" />
+          <h2>An easy way to send <span>requests to all suppliers</span></h2>
+          <p>We will send your request to all suppliers and get the best prices for you.</p>
+        </div>
+        <div className='inquiry-form'>
+          <form>
+            <h3>Send quote to suppliers</h3>
+            <input type="text" placeholder="What item do you need?" />
+            <input type="text" placeholder="Type more details" />
+            <div className='inquiry-form-row'>
+              <input type="text" placeholder="Quantity" />
+              <input type="number" min="1" max="100" value="1" />
+            </div>
+            <button type="submit">Send inquiry</button>
+          </form>
+        </div>
+      </section>
+
       {/* Recommended items */}
       <section className="recommendation-section" id="recommendation-section">
         <div className="section-header">
           <h2>Recommended items</h2>
-          {/* <Link to="/products" className="section-link">
-            View All <ArrowRight size={16} />
-          </Link> */}
         </div>
         <div className="product-grid">
           {featuredProducts.map((product) => (
